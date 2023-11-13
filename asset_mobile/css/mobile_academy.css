@@ -514,7 +514,7 @@ flex-shrink:0;
 .mob_call_trial{
   background-color: #258BE0;
   color: #fff;
-  margin-left:1rem;
+  margin-left:0.5rem;
 }
 
 .mob_call_btn img,
@@ -1306,6 +1306,7 @@ flex-shrink:0;
   line-height: 1.625rem;
   text-transform: capitalize;
   position: absolute;
+  top:20%;
   text-wrap: wrap;
   margin-left: 1rem;
   margin-right: 1rem;
