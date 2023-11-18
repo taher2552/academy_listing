@@ -583,8 +583,10 @@ function filterClick() {
   var width = document.getElementById("filter_div").style.width;
   if (width === "0px" || width == "") {
     document.getElementById("filter_div").style.width = "100%";
+    document.getElementById("filter_div").style.opacity = "1";
   } else {
     document.getElementById("filter_div").style.width = "0px";
+    document.getElementById("filter_div").style.opacity = "0";
   }
 }
 
