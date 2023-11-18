@@ -123,35 +123,6 @@ window.onload = function () {
 
 // slider range js ends
 
-// Custom Modal JS Start
-
-var modal = document.querySelector(".social-modal");
-var triggers = document.querySelectorAll(".trigger");
-var closeButton = document.querySelector(".close-button");
-
-function toggleModal() {
-  modal.classList.toggle("show-modal");
-
-  if (modal.classList.contains("show-modal")) {
-    document.body.classList.add("modal-open");
-  } else {
-    document.body.classList.remove("modal-open");
-  }
-}
-
-function windowOnClick(event) {
-  if (event.target === modal) {
-    toggleModal();
-  }
-}
-
-for (var i = 0, len = triggers.length; i < len; i++) {
-  triggers[i].addEventListener("click", toggleModal);
-}
-closeButton.addEventListener("click", toggleModal);
-window.addEventListener("click", windowOnClick);
-
-// Custom Modal JS End
 
 //tabs click js
 
@@ -593,3 +564,35 @@ function filterClick() {
 
 
 // academy listing filter click ends
+
+
+
+// Custom Modal JS Start
+
+var modal = document.querySelector(".social-modal");
+var triggers = document.querySelectorAll(".trigger");
+var closeButton = document.querySelector(".close-button");
+
+function toggleModal() {
+  modal.classList.toggle("show-modal");
+
+  if (modal.classList.contains("show-modal")) {
+    document.body.classList.add("modal-open");
+  } else {
+    document.body.classList.remove("modal-open");
+  }
+}
+
+function windowOnClick(event) {
+  if (event.target === modal) {
+    toggleModal();
+  }
+}
+
+for (var i = 0, len = triggers.length; i < len; i++) {
+  triggers[i].addEventListener("click", toggleModal);
+}
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
+
+// Custom Modal JS End
