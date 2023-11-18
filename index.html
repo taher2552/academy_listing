@@ -7,7 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="asset_mobile/css/mobile_footer.css">
     <link rel="stylesheet" href="asset_mobile/css/mobile_academy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
 </head>
 
@@ -27,6 +30,10 @@
                 <div>
                     <button>Sign In</button>
                 </div>
+
+                <div class="mob_academy_search_icon">
+                    <i class="fa fa-search"></i>
+                </div>
                 <div>
                     <img src="asset_mobile/images/menu.svg" alt="">
                 </div>
@@ -36,23 +43,23 @@
 
     <section class="mob_academy_listing_container">
 
-       <div class="mob_academy_listing_img">
-        <img src="asset_mobile/images/academy_listing_bg.png" alt="">
-        <p class="mob_academy_listing_line">soccer academies in <span> gurgaon</span></p>
-       </div>
+        <div class="mob_academy_listing_img">
+            <img src="asset_mobile/images/academy_listing_bg.png" alt="">
+            <p class="mob_academy_listing_line">soccer academies in <span> gurgaon</span></p>
+        </div>
 
-       <div class="mob_academy_listing_filter_btn">
-          <button><img src="asset_mobile/images/academy_filter.svg" alt=""> Filter</button>
-       </div>
+        <div class="mob_academy_listing_filter_btn" onclick="filterClick()">
+            <button><img src="asset_mobile/images/academy_filter.svg" alt=""> Filter</button>
+        </div>
 
-       <div class="mob_academy_listing_card">
+        <div class="mob_academy_listing_card">
 
-        <div class="mob_academy_listing_box">
-            <div class="mob_academy_listing_logo_img">
-                <img src="asset_mobile/images/academy_logo.png" alt="">
-            </div>
+            <div class="mob_academy_listing_box">
+                <div class="mob_academy_listing_logo_img">
+                    <img src="asset_mobile/images/academy_logo.png" alt="">
+                </div>
 
-            <div class="mob_academy_listing_name_box">
+                <div class="mob_academy_listing_name_box">
 
                     <div class="mob_academy_listing_name_flex">
                         <p class="mob_academy_listing_name">udaan sports academy</p>
@@ -60,7 +67,7 @@
                     </div>
 
                     <div class="mob_academy_listing_name_flex_2">
-                         <div class="mob_academy_small_star">
+                        <div class="mob_academy_small_star">
                             <span>Sector 23, Gurgaon</span>
                             <div class="mobile_academy_stars_small" style="--star_rating: 3.5"
                                 aria-label="Rating of this product is 3.5 out of 5."></div>
@@ -72,95 +79,96 @@
 
                         <div class="mob_academy_listing_feature_flex">
                             <img src="asset_mobile/images/academy_batch.svg" alt="">
-                            <p class="mob_academy_listing_featured">Featured</p>
+                            <span class="mob_academy_listing_featured">Featured</span>
                         </div>
 
-                        <div class="mob_academy_listing_feature_flex_2">
-                            <p class="mob_academy_listing_featured">9 Viewed this week</p>
+                        <div class="mob_academy_listing_feature_flex mob_academy_listing_feature_flex_2">
+                            <span class="mob_academy_listing_featured">9 Viewed this week</span>
                         </div>
                     </div>
 
-                    
+
+
+                </div>
+
 
             </div>
 
-            
-        </div>
 
-        
-           <div class="mob_academy_listing_grp">
+            <div class="mob_academy_listing_grp">
 
-            <div class="mob_academy_age_listing_grp">
-                <span class="mob_academy_listing_age">Fee Status</span>
- 
-                <div class="mob_age_flex">
- 
+                <div class="mob_academy_age_listing_grp">
+                    <span class="mob_academy_listing_age">Fee Status</span>
+
+                    <div class="mob_age_flex">
+
+                        <div class="mob_academy_listing_per_hour">
+                            <span class="mob_age_box_yrs"><span
+                                    class="mob_academy_listing_red_color">₹600</span>/hour</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="mob_academy_age_listing_grp_new">
+                    <span class="mob_academy_listing_age">Age Group</span>
+
+                    <div class="mob_age_flex">
+
+                        <div class="mob_age_listing_box">
+                            <span class="mob_age_box_yrs">11-13 yrs</span>
+                        </div>
+                        <div class="mob_age_listing_box">
+                            <span class="mob_age_box_yrs">14-16 yrs</span>
+                        </div>
+
+                        <div class="mob_age_listing_box">
+                            <span class="mob_age_box_yrs">18-20 yrs</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="mob_academy_age_listing_grp">
+                    <span class="mob_academy_listing_age">Experience</span>
                     <div class="mob_academy_listing_per_hour">
-                        <span class="mob_age_box_yrs"><span class="mob_academy_listing_red_color">₹600</span>/hour</span>
-                    </div>
- 
-                </div>
-              
-             </div>
-
-            <div class="mob_academy_age_listing_grp_new">
-                <span class="mob_academy_listing_age">Age Group</span>
- 
-                <div class="mob_age_flex">
- 
-                    <div class="mob_age_listing_box">
-                        <span class="mob_age_box_yrs">11-13 yrs</span>
-                    </div>
-                    <div class="mob_age_listing_box">
-                        <span class="mob_age_box_yrs">14-16 yrs</span>
-                    </div>
- 
-                    <div class="mob_age_listing_box">
-                        <span class="mob_age_box_yrs">18-20 yrs</span>
-                    </div>
- 
-                </div>
-              
-             </div>
- 
-             <div class="mob_academy_age_listing_grp">
-                <span class="mob_academy_listing_age">Experience</span>
-                <div class="mob_academy_listing_per_hour">
-                    <span class="mob_age_box_yrs">12 years</span>
-                </div>
-             </div>
- 
-             <div class="mob_academy_age_listing_grp">
-                <span class="mob_academy_listing_age">Ranking</span>
- 
-                <div class="mob_age_flex">
-                    <div class="mob_academy_listing_per_hour">
-                        <span class="mob_age_box_yrs">2nd in Gurgaon, Delhi NCR</span>
+                        <span class="mob_age_box_yrs">12 years</span>
                     </div>
                 </div>
-              
-             </div>
 
-           </div>
+                <div class="mob_academy_age_listing_grp">
+                    <span class="mob_academy_listing_age">Ranking</span>
 
-           <div class="mob_call_msg mob_call_msg_2">
-            <button class="mob_message_btn mob_message_btn_2"> <img src="asset_mobile/images/message.svg"
-                    alt="">Message</button>
-            <button class="mob_call_btn"> <img src="asset_mobile/images/call.svg" alt="">Call</button>
-            <button class="mob_call_btn mob_call_trial">Free Trial Clas</button>
-        </div>
+                    <div class="mob_age_flex">
+                        <div class="mob_academy_listing_per_hour">
+                            <span class="mob_age_box_yrs">2nd in Gurgaon, Delhi NCR</span>
+                        </div>
+                    </div>
 
+                </div>
 
-
-       </div>
-       <div class="mob_academy_listing_card">
-
-        <div class="mob_academy_listing_box">
-            <div class="mob_academy_listing_logo_img">
-                <img src="asset_mobile/images/academy_logo.png" alt="">
             </div>
 
-            <div class="mob_academy_listing_name_box">
+            <div class="mob_call_msg mob_call_msg_2">
+                <button class="mob_message_btn mob_message_btn_2"> <img src="asset_mobile/images/message.svg"
+                        alt="">Message</button>
+                <button class="mob_call_btn"> <img src="asset_mobile/images/call.svg" alt="">Call</button>
+                <button class="mob_call_btn mob_call_trial">Free Trial Clas</button>
+            </div>
+
+
+
+        </div>
+        <div class="mob_academy_listing_card">
+
+            <div class="mob_academy_listing_box">
+                <div class="mob_academy_listing_logo_img">
+                    <img src="asset_mobile/images/academy_logo.png" alt="">
+                </div>
+
+                <div class="mob_academy_listing_name_box">
 
                     <div class="mob_academy_listing_name_flex">
                         <p class="mob_academy_listing_name">udaan sports academy</p>
@@ -168,7 +176,7 @@
                     </div>
 
                     <div class="mob_academy_listing_name_flex_2">
-                         <div class="mob_academy_small_star">
+                        <div class="mob_academy_small_star">
                             <span>Sector 23, Gurgaon</span>
                             <div class="mobile_academy_stars_small" style="--star_rating: 3.5"
                                 aria-label="Rating of this product is 3.5 out of 5."></div>
@@ -180,95 +188,96 @@
 
                         <div class="mob_academy_listing_feature_flex">
                             <img src="asset_mobile/images/academy_batch.svg" alt="">
-                            <p class="mob_academy_listing_featured">Featured</p>
+                            <span class="mob_academy_listing_featured">Featured</span>
                         </div>
 
-                        <div class="mob_academy_listing_feature_flex_2">
-                            <p class="mob_academy_listing_featured">9 Viewed this week</p>
+                        <div class="mob_academy_listing_feature_flex mob_academy_listing_feature_flex_2">
+                            <span class="mob_academy_listing_featured">9 Viewed this week</span>
                         </div>
                     </div>
 
-                    
+
+
+                </div>
+
 
             </div>
 
-            
-        </div>
 
-        
-           <div class="mob_academy_listing_grp">
+            <div class="mob_academy_listing_grp">
 
-            <div class="mob_academy_age_listing_grp">
-                <span class="mob_academy_listing_age">Fee Status</span>
- 
-                <div class="mob_age_flex">
- 
+                <div class="mob_academy_age_listing_grp">
+                    <span class="mob_academy_listing_age">Fee Status</span>
+
+                    <div class="mob_age_flex">
+
+                        <div class="mob_academy_listing_per_hour">
+                            <span class="mob_age_box_yrs"><span
+                                    class="mob_academy_listing_red_color">₹600</span>/hour</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="mob_academy_age_listing_grp_new">
+                    <span class="mob_academy_listing_age">Age Group</span>
+
+                    <div class="mob_age_flex">
+
+                        <div class="mob_age_listing_box">
+                            <span class="mob_age_box_yrs">11-13 yrs</span>
+                        </div>
+                        <div class="mob_age_listing_box">
+                            <span class="mob_age_box_yrs">14-16 yrs</span>
+                        </div>
+
+                        <div class="mob_age_listing_box">
+                            <span class="mob_age_box_yrs">18-20 yrs</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="mob_academy_age_listing_grp">
+                    <span class="mob_academy_listing_age">Experience</span>
                     <div class="mob_academy_listing_per_hour">
-                        <span class="mob_age_box_yrs"><span class="mob_academy_listing_red_color">₹600</span>/hour</span>
-                    </div>
- 
-                </div>
-              
-             </div>
-
-            <div class="mob_academy_age_listing_grp_new">
-                <span class="mob_academy_listing_age">Age Group</span>
- 
-                <div class="mob_age_flex">
- 
-                    <div class="mob_age_listing_box">
-                        <span class="mob_age_box_yrs">11-13 yrs</span>
-                    </div>
-                    <div class="mob_age_listing_box">
-                        <span class="mob_age_box_yrs">14-16 yrs</span>
-                    </div>
- 
-                    <div class="mob_age_listing_box">
-                        <span class="mob_age_box_yrs">18-20 yrs</span>
-                    </div>
- 
-                </div>
-              
-             </div>
- 
-             <div class="mob_academy_age_listing_grp">
-                <span class="mob_academy_listing_age">Experience</span>
-                <div class="mob_academy_listing_per_hour">
-                    <span class="mob_age_box_yrs">12 years</span>
-                </div>
-             </div>
- 
-             <div class="mob_academy_age_listing_grp">
-                <span class="mob_academy_listing_age">Ranking</span>
- 
-                <div class="mob_age_flex">
-                    <div class="mob_academy_listing_per_hour">
-                        <span class="mob_age_box_yrs">2nd in Gurgaon, Delhi NCR</span>
+                        <span class="mob_age_box_yrs">12 years</span>
                     </div>
                 </div>
-              
-             </div>
 
-           </div>
+                <div class="mob_academy_age_listing_grp">
+                    <span class="mob_academy_listing_age">Ranking</span>
 
-           <div class="mob_call_msg mob_call_msg_2">
-            <button class="mob_message_btn mob_message_btn_2"> <img src="asset_mobile/images/message.svg"
-                    alt="">Message</button>
-            <button class="mob_call_btn"> <img src="asset_mobile/images/call.svg" alt="">Call</button>
-            <button class="mob_call_btn mob_call_trial">Free Trial Class</button>
-        </div>
+                    <div class="mob_age_flex">
+                        <div class="mob_academy_listing_per_hour">
+                            <span class="mob_age_box_yrs">2nd in Gurgaon, Delhi NCR</span>
+                        </div>
+                    </div>
 
+                </div>
 
-
-       </div>
-       <div class="mob_academy_listing_card">
-
-        <div class="mob_academy_listing_box">
-            <div class="mob_academy_listing_logo_img">
-                <img src="asset_mobile/images/academy_logo.png" alt="">
             </div>
 
-            <div class="mob_academy_listing_name_box">
+            <div class="mob_call_msg mob_call_msg_2">
+                <button class="mob_message_btn mob_message_btn_2"> <img src="asset_mobile/images/message.svg"
+                        alt="">Message</button>
+                <button class="mob_call_btn"> <img src="asset_mobile/images/call.svg" alt="">Call</button>
+                <button class="mob_call_btn mob_call_trial">Free Trial Class</button>
+            </div>
+
+
+
+        </div>
+        <div class="mob_academy_listing_card">
+
+            <div class="mob_academy_listing_box">
+                <div class="mob_academy_listing_logo_img">
+                    <img src="asset_mobile/images/academy_logo.png" alt="">
+                </div>
+
+                <div class="mob_academy_listing_name_box">
 
                     <div class="mob_academy_listing_name_flex">
                         <p class="mob_academy_listing_name">udaan sports academy</p>
@@ -276,7 +285,7 @@
                     </div>
 
                     <div class="mob_academy_listing_name_flex_2">
-                         <div class="mob_academy_small_star">
+                        <div class="mob_academy_small_star">
                             <span>Sector 23, Gurgaon</span>
                             <div class="mobile_academy_stars_small" style="--star_rating: 3.5"
                                 aria-label="Rating of this product is 3.5 out of 5."></div>
@@ -288,95 +297,96 @@
 
                         <div class="mob_academy_listing_feature_flex">
                             <img src="asset_mobile/images/academy_batch.svg" alt="">
-                            <p class="mob_academy_listing_featured">Featured</p>
+                            <span class="mob_academy_listing_featured">Featured</span>
                         </div>
 
-                        <div class="mob_academy_listing_feature_flex_2">
-                            <p class="mob_academy_listing_featured">9 Viewed this week</p>
+                        <div class="mob_academy_listing_feature_flex mob_academy_listing_feature_flex_2">
+                            <span class="mob_academy_listing_featured">9 Viewed this week</span>
                         </div>
                     </div>
 
-                    
+
+
+                </div>
+
 
             </div>
 
-            
-        </div>
 
-        
-           <div class="mob_academy_listing_grp">
+            <div class="mob_academy_listing_grp">
 
-            <div class="mob_academy_age_listing_grp">
-                <span class="mob_academy_listing_age">Fee Status</span>
- 
-                <div class="mob_age_flex">
- 
+                <div class="mob_academy_age_listing_grp">
+                    <span class="mob_academy_listing_age">Fee Status</span>
+
+                    <div class="mob_age_flex">
+
+                        <div class="mob_academy_listing_per_hour">
+                            <span class="mob_age_box_yrs"><span
+                                    class="mob_academy_listing_red_color">₹600</span>/hour</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="mob_academy_age_listing_grp_new">
+                    <span class="mob_academy_listing_age">Age Group</span>
+
+                    <div class="mob_age_flex">
+
+                        <div class="mob_age_listing_box">
+                            <span class="mob_age_box_yrs">11-13 yrs</span>
+                        </div>
+                        <div class="mob_age_listing_box">
+                            <span class="mob_age_box_yrs">14-16 yrs</span>
+                        </div>
+
+                        <div class="mob_age_listing_box">
+                            <span class="mob_age_box_yrs">18-20 yrs</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="mob_academy_age_listing_grp">
+                    <span class="mob_academy_listing_age">Experience</span>
                     <div class="mob_academy_listing_per_hour">
-                        <span class="mob_age_box_yrs"><span class="mob_academy_listing_red_color">₹600</span>/hour</span>
-                    </div>
- 
-                </div>
-              
-             </div>
-
-            <div class="mob_academy_age_listing_grp_new">
-                <span class="mob_academy_listing_age">Age Group</span>
- 
-                <div class="mob_age_flex">
- 
-                    <div class="mob_age_listing_box">
-                        <span class="mob_age_box_yrs">11-13 yrs</span>
-                    </div>
-                    <div class="mob_age_listing_box">
-                        <span class="mob_age_box_yrs">14-16 yrs</span>
-                    </div>
- 
-                    <div class="mob_age_listing_box">
-                        <span class="mob_age_box_yrs">18-20 yrs</span>
-                    </div>
- 
-                </div>
-              
-             </div>
- 
-             <div class="mob_academy_age_listing_grp">
-                <span class="mob_academy_listing_age">Experience</span>
-                <div class="mob_academy_listing_per_hour">
-                    <span class="mob_age_box_yrs">12 years</span>
-                </div>
-             </div>
- 
-             <div class="mob_academy_age_listing_grp">
-                <span class="mob_academy_listing_age">Ranking</span>
- 
-                <div class="mob_age_flex">
-                    <div class="mob_academy_listing_per_hour">
-                        <span class="mob_age_box_yrs">2nd in Gurgaon, Delhi NCR</span>
+                        <span class="mob_age_box_yrs">12 years</span>
                     </div>
                 </div>
-              
-             </div>
 
-           </div>
+                <div class="mob_academy_age_listing_grp">
+                    <span class="mob_academy_listing_age">Ranking</span>
 
-           <div class="mob_call_msg mob_call_msg_2">
-            <button class="mob_message_btn mob_message_btn_2"> <img src="asset_mobile/images/message.svg"
-                    alt="">Message</button>
-            <button class="mob_call_btn"> <img src="asset_mobile/images/call.svg" alt="">Call</button>
-            <button class="mob_call_btn mob_call_trial">Free Trial Class</button>
-        </div>
+                    <div class="mob_age_flex">
+                        <div class="mob_academy_listing_per_hour">
+                            <span class="mob_age_box_yrs">2nd in Gurgaon, Delhi NCR</span>
+                        </div>
+                    </div>
 
+                </div>
 
-
-       </div>
-       <div class="mob_academy_listing_card">
-
-        <div class="mob_academy_listing_box">
-            <div class="mob_academy_listing_logo_img">
-                <img src="asset_mobile/images/academy_logo.png" alt="">
             </div>
 
-            <div class="mob_academy_listing_name_box">
+            <div class="mob_call_msg mob_call_msg_2">
+                <button class="mob_message_btn mob_message_btn_2"> <img src="asset_mobile/images/message.svg"
+                        alt="">Message</button>
+                <button class="mob_call_btn"> <img src="asset_mobile/images/call.svg" alt="">Call</button>
+                <button class="mob_call_btn mob_call_trial">Free Trial Class</button>
+            </div>
+
+
+
+        </div>
+        <div class="mob_academy_listing_card">
+
+            <div class="mob_academy_listing_box">
+                <div class="mob_academy_listing_logo_img">
+                    <img src="asset_mobile/images/academy_logo.png" alt="">
+                </div>
+
+                <div class="mob_academy_listing_name_box">
 
                     <div class="mob_academy_listing_name_flex">
                         <p class="mob_academy_listing_name">udaan sports academy</p>
@@ -384,7 +394,7 @@
                     </div>
 
                     <div class="mob_academy_listing_name_flex_2">
-                         <div class="mob_academy_small_star">
+                        <div class="mob_academy_small_star">
                             <span>Sector 23, Gurgaon</span>
                             <div class="mobile_academy_stars_small" style="--star_rating: 3.5"
                                 aria-label="Rating of this product is 3.5 out of 5."></div>
@@ -396,101 +406,270 @@
 
                         <div class="mob_academy_listing_feature_flex">
                             <img src="asset_mobile/images/academy_batch.svg" alt="">
-                            <p class="mob_academy_listing_featured">Featured</p>
+                            <span class="mob_academy_listing_featured">Featured</span>
                         </div>
 
-                        <div class="mob_academy_listing_feature_flex_2">
-                            <p class="mob_academy_listing_featured">9 Viewed this week</p>
+                        <div class="mob_academy_listing_feature_flex mob_academy_listing_feature_flex_2">
+                            <span class="mob_academy_listing_featured">9 Viewed this week</span>
                         </div>
                     </div>
 
-                    
+
+
+                </div>
+
 
             </div>
 
-            
-        </div>
 
-        
-           <div class="mob_academy_listing_grp">
+            <div class="mob_academy_listing_grp">
 
-            <div class="mob_academy_age_listing_grp">
-                <span class="mob_academy_listing_age">Fee Status</span>
- 
-                <div class="mob_age_flex">
- 
+                <div class="mob_academy_age_listing_grp">
+                    <span class="mob_academy_listing_age">Fee Status</span>
+
+                    <div class="mob_age_flex">
+
+                        <div class="mob_academy_listing_per_hour">
+                            <span class="mob_age_box_yrs"><span
+                                    class="mob_academy_listing_red_color">₹600</span>/hour</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="mob_academy_age_listing_grp_new">
+                    <span class="mob_academy_listing_age">Age Group</span>
+
+                    <div class="mob_age_flex">
+
+                        <div class="mob_age_listing_box">
+                            <span class="mob_age_box_yrs">11-13 yrs</span>
+                        </div>
+                        <div class="mob_age_listing_box">
+                            <span class="mob_age_box_yrs">14-16 yrs</span>
+                        </div>
+
+                        <div class="mob_age_listing_box">
+                            <span class="mob_age_box_yrs">18-20 yrs</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="mob_academy_age_listing_grp">
+                    <span class="mob_academy_listing_age">Experience</span>
                     <div class="mob_academy_listing_per_hour">
-                        <span class="mob_age_box_yrs"><span class="mob_academy_listing_red_color">₹600</span>/hour</span>
+                        <span class="mob_age_box_yrs">12 years</span>
                     </div>
- 
                 </div>
-              
-             </div>
 
-            <div class="mob_academy_age_listing_grp_new">
-                <span class="mob_academy_listing_age">Age Group</span>
- 
-                <div class="mob_age_flex">
- 
-                    <div class="mob_age_listing_box">
-                        <span class="mob_age_box_yrs">11-13 yrs</span>
-                    </div>
-                    <div class="mob_age_listing_box">
-                        <span class="mob_age_box_yrs">14-16 yrs</span>
-                    </div>
- 
-                    <div class="mob_age_listing_box">
-                        <span class="mob_age_box_yrs">18-20 yrs</span>
-                    </div>
- 
-                </div>
-              
-             </div>
- 
-             <div class="mob_academy_age_listing_grp">
-                <span class="mob_academy_listing_age">Experience</span>
-                <div class="mob_academy_listing_per_hour">
-                    <span class="mob_age_box_yrs">12 years</span>
-                </div>
-             </div>
- 
-             <div class="mob_academy_age_listing_grp">
-                <span class="mob_academy_listing_age">Ranking</span>
- 
-                <div class="mob_age_flex">
-                    <div class="mob_academy_listing_per_hour">
-                        <span class="mob_age_box_yrs">2nd in Gurgaon, Delhi NCR</span>
-                    </div>
-                </div>
-              
-             </div>
+                <div class="mob_academy_age_listing_grp">
+                    <span class="mob_academy_listing_age">Ranking</span>
 
-           </div>
+                    <div class="mob_age_flex">
+                        <div class="mob_academy_listing_per_hour">
+                            <span class="mob_age_box_yrs">2nd in Gurgaon, Delhi NCR</span>
+                        </div>
+                    </div>
 
-           <div class="mob_call_msg mob_call_msg_2">
-            <button class="mob_message_btn mob_message_btn_2"> <img src="asset_mobile/images/message.svg"
-                    alt="">Message</button>
-            <button class="mob_call_btn"> <img src="asset_mobile/images/call.svg" alt="">Call</button>
-            <button class="mob_call_btn mob_call_trial">Free Trial Class</button>
+                </div>
+
+            </div>
+
+            <div class="mob_call_msg mob_call_msg_2">
+                <button class="mob_message_btn mob_message_btn_2"> <img src="asset_mobile/images/message.svg"
+                        alt="">Message</button>
+                <button class="mob_call_btn"> <img src="asset_mobile/images/call.svg" alt="">Call</button>
+                <button class="mob_call_btn mob_call_trial">Free Trial Class</button>
+            </div>
+
+
+
         </div>
-
-
-
-       </div>
 
     </section>
 
+    <!-- filter section  -->
+
+
+    <header class="page-header mob_side_menu">
+        <div class="container-fluid container-space bg-light fixed-top">
+            <div class="row">
+                <div class="col-1 d-flex justify-content-center">
+                    <div id="filter_div" class="sidenav">
+
+
+                        <div class="mob_filter_box">
+
+                            <div></div>
+                    
+                            <div>
+                                <p class="mob_filter_by">Filter By</p>
+                            </div>
+                        
+                            <div class="mob_filter_cross" onclick="filterClick()">
+                                <p>X</p>
+                            </div>
+                    
+                        </div>
+                    
+                        <div class="mob_filter_input">
+                            <label for="">Academy Name</label>
+                            <input type="text" placeholder="eg. Udaan Academy">
+                        </div>
+                    
+                        <div>
+                            <p class="mob_filter_topic">Localities</p>
+                    
+                            <div class="mobile_login_check">
+                                <label class="mobile_login_label_checkbox">
+                                  <input type="checkbox" checked />
+                                  <span class="mobile_login_checkbox"></span>
+                                  <p class="mob_filter_sector">Sector, 65</p>
+                                </label>
+                              </div>
+                    
+                            <div class="mobile_login_check">
+                                <label class="mobile_login_label_checkbox">
+                                  <input type="checkbox" checked />
+                                  <span class="mobile_login_checkbox"></span>
+                                  <p class="mob_filter_sector">Sector, 63</p>
+                                </label>
+                              </div>
+                    
+                            <div class="mobile_login_check">
+                                <label class="mobile_login_label_checkbox">
+                                  <input type="checkbox" />
+                                  <span class="mobile_login_checkbox"></span>
+                                  <p class="mob_filter_sector">Golf Course Ext Road</p>
+                                </label>
+                              </div>
+                    
+                            <div class="mobile_login_check">
+                                <label class="mobile_login_label_checkbox">
+                                  <input type="checkbox" />
+                                  <span class="mobile_login_checkbox"></span>
+                                  <p class="mob_filter_sector">Sector, 67</p>
+                                </label>
+                              </div>
+                    
+                            <div class="mobile_login_check">
+                                <label class="mobile_login_label_checkbox">
+                                  <input type="checkbox" />
+                                  <span class="mobile_login_checkbox"></span>
+                                  <p class="mob_filter_sector">Sector, 68</p>
+                                </label>
+                              </div>
+                    
+                              <p class="mob_filter_topic">Rating</p>
+                    
+                              <div class="mobile_login_check">
+                                <label class="mobile_login_label_checkbox">
+                                  <input type="checkbox" />
+                                  <span class="mobile_login_checkbox"></span>
+                                  <p class="mob_filter_sector">Any</p>
+                                </label>
+                              </div>
+                    
+                              <div class="mobile_login_check">
+                                <label class="mobile_login_label_checkbox">
+                                  <input type="checkbox" />
+                                  <span class="mobile_login_checkbox"></span>
+                                  <p class="mob_filter_sector">3.0 <img src="asset_mobile/images/gold_star.svg" alt=""></p>
+                                </label>
+                              </div>
+                    
+                              <div class="mobile_login_check">
+                                <label class="mobile_login_label_checkbox">
+                                  <input type="checkbox" />
+                                  <span class="mobile_login_checkbox"></span>
+                                  <p class="mob_filter_sector">4.0 <img src="asset_mobile/images/gold_star.svg" alt=""></p>
+                                </label>
+                              </div>
+                    
+                              <div class="mobile_login_check">
+                                <label class="mobile_login_label_checkbox">
+                                  <input type="checkbox" checked />
+                                  <span class="mobile_login_checkbox"></span>
+                                  <p class="mob_filter_sector">5.0 <img src="asset_mobile/images/gold_star.svg" alt=""></p>
+                                </label>
+                              </div>
+                        </div>
+                    
+                        <div class="mob_filter_slider">
+                            <p class="mob_filter_topic">fee range (₹)</p>
+                          <div class="mob_filter_range_slider">
+                            
+                            <input value="200" min="200" max="1000" step="50" type="range">
+                            <input value="1000" min="200" max="1000" step="50" type="range">
+                            
+                      
+                            <div class="mob_academy_filter_value">
+                              <span class="rangeValues-1"></span>
+                              <span class="rangeValues-2"></span>
+                            </div>
+                          </div>
+                          </div>
+                    
+                          <p class="mob_filter_topic">More</p>
+                    
+                          <div>
+                            <div class="mob_filter_on_off">
+                                <p class="mob_filter_pic_on">Academies With Photos</p>
+                                <label class="mob_filter_switch">
+                                    <input type="checkbox" checked>
+                                    <span class="mob_switch_slider mob_switch_round"></span>
+                                  </label>
+                            </div>
+                    
+                            <div class="mob_filter_on_off">
+                                <p class="mob_filter_pic_on">Verified Only</p>
+                                <label class="mob_filter_switch">
+                                    <input type="checkbox">
+                                    <span class="mob_switch_slider mob_switch_round"></span>
+                                  </label>
+                            </div>
+                    
+                            <div class="mob_filter_on_off">
+                                <p class="mob_filter_pic_on">Academies With Videos</p>
+                                <label class="mob_filter_switch">
+                                    <input type="checkbox" checked>
+                                    <span class="mob_switch_slider mob_switch_round"></span>
+                                  </label>
+                            </div>
+                    
+                             <div class="mob_filter_line"></div>
+                    
+                             <div class="mob_filter_btn">
+                                <button class="mob_clear_filter">Clear All Filters</button>
+                                <button class="mob_apply_filter">Apply All Filters</button>
+                             </div>
+                          </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
 
 
 
 
+
+
+
+    <!-- filter section ends -->
 
     <footer class="mobile_home_footer">
 
 
         <div class="mob_footer_fix">
 
-            <div class="mob_blog_top_icon">
+            <div class="mob_blog_top_icon" id="scrollToTop">
                 <div class="mob_blog_top_btn">
                     <img src="asset_mobile/images/blog_angle_up.svg" alt="">
                 </div>
@@ -565,6 +744,12 @@
         </div>
 
     </footer>
+
+    <script src="asset_mobile/js/mobile_home.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
 
 </body>
